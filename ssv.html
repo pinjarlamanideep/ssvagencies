@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRI SAI VENKATESWARA AGENCIES - Dream Your Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: var(--secondary-color);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #c0392b;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 80px 0;
+        }
+        .about img {
+              width: 570px;
+              height: 400px;
+              object-fit: fill;
+        }
+        
+        
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--dark-color);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 10px auto;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 400px;
+            background-color: #ddd;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+    padding-bottom: 10px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    height: 140px;
+    background-color: #eee;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-details {
+    padding: 12px;
+}
+
+.product-details h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--dark-color);
+}
+
+.product-details p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.btn {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    border-radius: 4px;
+}
+
+        
+        /* Hours Section */
+        .hours {
+            padding: 80px 0;
+        }
+        
+        .hours-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hours-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .hours-table th, .hours-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .hours-table th {
+            color: var(--dark-color);
+        }
+        
+        /* Partners Section */
+        .partners {
+            padding: 80px 0;
+            background-color: var(--light-color);
+        }
+        
+        .partners-logos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .partner-logo {
+            height: 100px;
+            width: 150px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .partner-logo1 {
+            height: 100px;
+            width: 150px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .partner-logo img{
+              width: 100px;
+              height: 100px;
+              object-fit: fill;
+
+        }
+        .partner-logo1 img{
+              height: 100px;
+              object-fit: fill;
+
+        }
+        
+        
+        /* Reviews Section */
+        .reviews {
+            padding: 80px 0;
+        }
+        
+        .reviews-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .review-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .review-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .review-stars {
+            color: gold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .review-text {
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #555;
+        }
+        
+        .reviewer {
+            display: flex;
+            align-items: center;
+        }
+        
+        .reviewer-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin-right: 15px;
+        }
+        
+        .reviewer-name {
+            font-weight: bold;
+            color: var(--dark-color);
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background-color: var(--light-color);
+        }
+        
+        .contact-content {
+            display: flex;
+            gap: 40px;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-icon {
+            background-color: var(--secondary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+        
+        .contact-form {
+            flex: 1;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        textarea.form-control {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: var(--secondary-color);
+            margin-top: 10px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+}
+
+
+/* Specific brand background colors */
+.social-icons a[aria-label="Facebook"] {
+    background-color: #1877f2;
+}
+
+.social-icons a[aria-label="Instagram"] {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social-icons a[aria-label="Twitter"] {
+    background-color: #1da1f2;
+}
+
+.social-icons a[aria-label="YouTube"] {
+    background-color: #ff0000;
+}
+
+/* Hover effect: simple scale animation */
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .contact-content {
+                flex-direction: column;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+        .hours-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hours-table-container {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .hours-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+    }
+
+    .hours-table th, .hours-table td {
+        padding: 12px;
+        border: 1px solid #ddd;
+    }
+
+    .expandable:hover {
+        background-color: #f1f1f1;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .status-message {
+        font-size: 1.2rem;
+        color: green;
+        font-weight: bold;
+    }
+
+    .status-message.closed {
+        color: red;
+    }
+
+    @media (max-width: 768px) {
+        .hours-table-container {
+            width: 100%;
+        }
+        .hours-table th, .hours-table td {
+            padding: 8px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">SRI SAI VENKATESWARA AGENCIES<span></span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#hours">Hours</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Welcome to SSV AGENCIES</h1>
+            <p>"Your trusted partner for quality paints, advanced inverters, smart lighting, energy-efficient bulbs, and stylish table lamps to reliable pumps, powerful greasers, coolers, heaters, and a wide range of essential electrical appliances. We proudly serve both wholesale and retail customers with competitive pricing and expert advice since 2017. We offer a wide range of high-quality products from industry-leading brands.</p>
+            <a href="#products" class="btn">Explore Our Products</a>
+        </div>
+    </section>
+
+    
+   <!-- About Section -->
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="LOGO.jpeg" alt="SSV Agencies Storefront">
+            </div>
+            <div class="about-text">
+                <h3>Your Trusted Partner for Electrical & Home Solutions</h3>
+                <p>Established in 2017 by Mr. Saridi Madhava Rao, SSV Agencies is a leading provider of premium electrical and home improvement products for homes and businesses.</p>
+                <p>Our wide range includes inverters, smart lights, energy-efficient bulbs, pumps, coolers, heaters, and durable appliances — all at competitive prices.</p>
+                <p>We also offer quality piping, secure windows and doors, and elegant conservatories, combining style and reliability under one roof.</p>
+                <p>At SSV Agencies, customer satisfaction, product quality, and trusted service are at the heart of everything we do.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Products Section -->
+<section class="products" id="products">
+    <div class="container">
+        <h2 class="section-title">Our Products</h2>
+        <div class="products-grid">
+    
+            <!-- Existing Products -->
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="paints.jpeg" alt="Paints">
+                </div>
+                <div class="product-details">
+                    <h3>Asian Paints</h3>
+                    <p>Dream Your Home.</p>
+                    <div class="product-price">Starting at ₹80</div>
+                    <a href="#contact" class="btn">Inquire Now</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="inverter.jpeg" alt="Inverters">
+                </div>
+                <div class="product-details">
+                    <h3>Inverters</h3>
+                    <p>Power up your life with the reliability of an inverter.</p>
+                    <div class="product-price">Starting at ₹10,000</div>
+                    <a href="#contact" class="btn">Inquire Now</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="coolers.jpeg" alt="Coolers">
+                </div>
+                <div class="product-details">
+                    <h3>Coolers</h3>
+                    <p>Keeping your family cool is a breeze.</p>
+                    <div class="product-price">Starting at ₹2,200</div>
+                    <a href="#contact" class="btn">Inquire Now</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="pipes.jpeg" alt="PVC-pipes">
+                </div>
+                <div class="product-details">
+                    <h3>PVC-Pipes</h3>
+                    <p>Clogged no more, just free-flow vibes here.</p>
+                    <div class="product-price">Starting at ₹299</div>
+                    <a href="#contact" class="btn">Inquire Now</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="hardware.jpeg" alt="Hardware">
+                </div>
+                <div class="product-details">
+                    <h3>Hardware</h3>
+                    <p>Quality materials and accessories for every need.</p>
+                    <div class="product-price">Starting at ₹399</div>
+                    <a href="#contact" class="btn">Inquire Now</a>
+                </div>
+            </div>
+    
+            
+    
+            <!-- New Products -->
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="ledlights.jpeg" alt="LED Lights">
+                </div>
+                <div class="product-details">
+                    <h3>LED Lights</h3>
+                    <p>Bright, energy-efficient lighting solutions.</p>
+                    <div class="product-price">Starting at ₹30</div>
+                    <a href="#contact" class="btn">Inquire Now</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="pumps.jpeg" alt="Pumps">
+                </div>
+                <div class="product-details">
+                    <h3>Pumps</h3>
+                    <p>Reliable water pumps for all requirements.</p>
+                    <div class="product-price">Starting at ₹2,000</div>
+                    <a href="#contact" class="btn">Inquire Now</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="heaters.jpeg" alt="Water Heaters">
+                </div>
+                <div class="product-details">
+                    <h3>Water Heaters</h3>
+                    <p>Instant heating for your everyday comfort.</p>
+                    <div class="product-price">Starting at ₹250</div>
+                    <a href="#contact" class="btn">Inquire Now</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="geysers.jpeg" alt="Geysers">
+                </div>
+                <div class="product-details">
+                    <h3>Geysers</h3>
+                    <p>Quick, reliable water heating solutions.</p>
+                    <div class="product-price">Starting at ₹1,900</div>
+                    <a href="#contact" class="btn">Inquire Now</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="fans.jpeg" alt="Fans">
+                </div>
+                <div class="product-details">
+                    <h3>Fans</h3>
+                    <p>Silent and efficient cooling fans.</p>
+                    <div class="product-price">Starting at ₹800</div>
+                    <a href="#contact" class="btn">Inquire Now</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="galaxyropes.jpeg" alt="LED Galaxy Ropes">
+                </div>
+                <div class="product-details">
+                    <h3>LED Galaxy Ropes</h3>
+                    <p>Decorative rope lights for indoor and outdoor.</p>
+                    <div class="product-price">Starting at ₹30</div>
+                    <a href="#contact" class="btn">Inquire Now</a>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="tablelamps.jpeg" alt="Table Lamps" >
+                </div>
+                <div class="product-details">
+                    <h3>Table Lamps</h3>
+                    <p>Stylish and practical lighting for your desk or bedside.</p>
+                    <div class="product-price">Starting at ₹800</div>
+                    <a href="#contact" class="btn">Inquire Now</a>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</section>
+
+    
+
+   <!-- Store Hours Section -->
+<section class="hours" id="hours">
+    <div class="container">
+        <h2 class="section-title">Store Hours</h2>
+        <div class="hours-container">
+            <div class="hours-table-container">
+                <table class="hours-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="expandable">
+                            <td>Monday</td>
+                            <td>9:00 AM - 8:00 PM</td>
+                        </tr>
+                        <tr class="expandable">
+                            <td>Tuesday</td>
+                            <td>9:00 AM - 8:00 PM</td>
+                        </tr>
+                        <tr class="expandable">
+                            <td>Wednesday</td>
+                            <td>9:00 AM - 8:00 PM</td>
+                        </tr>
+                        <tr class="expandable">
+                            <td>Thursday</td>
+                            <td>9:00 AM - 8:00 PM</td>
+                        </tr>
+                        <tr class="expandable">
+                            <td>Friday</td>
+                            <td>9:00 AM - 9:00 PM</td>
+                        </tr>
+                        <tr class="expandable">
+                            <td>Saturday</td>
+                            <td>10:00 AM - 9:00 PM</td>
+                        </tr>
+                        <tr class="expandable">
+                            <td>Sunday</td>
+                            <td>11:00 AM - 6:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="status-message">
+                <p id="statusText">The store is open now! (Check actual time)</p>
+            </div>
+            <p style="margin-top: 20px; text-align: center;">Special holiday hours may apply. Please check our social media for announcements.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CSS for Interactivity -->
+<style>
+   
+</style>
+
+<!-- JavaScript for Interactive Status -->
+<script>
+    const statusText = document.getElementById("statusText");
+
+    // Function to check if the store is currently open
+    function checkStoreStatus() {
+        const currentDay = new Date().getDay();  // Sunday - 0, Monday - 1, ..., Saturday - 6
+        const currentHour = new Date().getHours();  // 24-hour format
+
+        const storeHours = {
+            0: { open: 11, close: 18 },  // Sunday
+            1: { open: 9, close: 20 },  // Monday
+            2: { open: 9, close: 20 },  // Tuesday
+            3: { open: 9, close: 20 },  // Wednesday
+            4: { open: 9, close: 20 },  // Thursday
+            5: { open: 9, close: 21 },  // Friday
+            6: { open: 10, close: 21 }, // Saturday
+        };
+
+        const todayHours = storeHours[currentDay];
+        if (todayHours) {
+            if (currentHour >= todayHours.open && currentHour < todayHours.close) {
+                statusText.textContent = "The store is open now!";
+                statusText.classList.remove("closed");
+            } else {
+                statusText.textContent = "The store is closed now!";
+                statusText.classList.add("closed");
+            }
+        }
+    }
+
+    // Call the function on load
+    checkStoreStatus();
+</script>
+
+
+    <!-- Brand Partners Section -->
+    <section class="partners" id="partners">
+        <div class="container">
+            <h2 class="section-title">Our Brand Partners</h2>
+            <div class="partners-logos">
+                <div class="partner-logo"><img src="birlaopus.jpeg" alt="Birla Opus"></div>
+                <div class="partner-logo"><img src="asianpaints.jpeg" alt="Asian Paints"></div>
+                <div class="partner-logo"><img src="cripumps.jpeg" alt="cripumps"></div>
+                <div class="partner-logo"><img src="crompton.jpeg" alt="crompton"></div>
+                <div class="partner-logo1"><img src="goorej.jpeg" alt="goorej"></div>
+                <div class="partner-logo"><img src="landt.jpeg" alt="l&t"></div>
+                <div class="partner-logo"><img src="parryware.jpeg" alt="parryware"></div>
+                <div class="partner-logo"><img src="shenlack.jpeg" alt="shenlack"></div>
+                <div class="partner-logo"><img src="sudhakar.jpeg" alt="sudhakar"></div>
+                <div class="partner-logo"><img src="technopaints.jpeg" alt="technopaints"></div>
+                <div class="partner-logo1"><img src="vihan.jpeg" alt="vihan"></div>
+                <div class="partner-logo"><img src="adityabirlagroup.jpeg" alt="adityabirlagroup"></div>
+                <div class="partner-logo"><img src="goldmed.jpeg" alt="goldmed"></div>
+                <div class="partner-logo1"><img src="amaron.jpeg" alt="amaron"></div>
+                <div class="partner-logo"><img src="exide.jpeg" alt="exide"></div>
+                <div class="partner-logo1"><img src="ashirvad.jpeg" alt="ashirvad"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="reviews-container">
+                <div class="review-cards">
+                    <a href="https://g.page/YOUR-BUSINESS-REVIEWS-LINK" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="review-card">
+                            <div class="review-stars">★★★★★</div>
+                            <div class="review-text">"SSV Agencies is my go-to place for home improvement needs. I recently purchased an inverter and smart lighting system — both work perfectly!"</div>
+                            <div class="reviewer">
+                                <div class="reviewer-image"></div>
+                                <div>
+                                    <div class="reviewer-name">Rajesh Kumar</div>
+                                    <div class="reviewer-date">April 12, 2025</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <a href="https://g.page/YOUR-BUSINESS-REVIEWS-LINK" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="review-card">
+                            <div class="review-stars">★★★★★</div>
+                            <div class="review-text">"Excellent service and a great range of products. Bought a water pump and LED lights — everything was well priced and high quality."</div>
+                            <div class="reviewer">
+                                <div class="reviewer-image"></div>
+                                <div>
+                                    <div class="reviewer-name">Anusha Reddy</div>
+                                    <div class="reviewer-date">March 30, 2024</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <a href="https://g.page/YOUR-BUSINESS-REVIEWS-LINK" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="review-card">
+                            <div class="review-stars">★★★★☆</div>
+                            <div class="review-text">"Found everything I needed for my new house — from door fittings to coolers. Good quality, but had to wait a bit for billing."</div>
+                            <div class="reviewer">
+                                <div class="reviewer-image"></div>
+                                <div>
+                                    <div class="reviewer-name">Vikram Naidu</div>
+                                    <div class="reviewer-date">February 18, 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>Address:</strong><br>
+                                Near APGVB BANK <br>
+                                Garbham-535102, Vizianagaram 
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">👤</div>
+                            <div>
+                                <strong>Owner:</strong><br>
+                                Mr. Saridi Madhava Rao
+                            </div>
+                        </div>
+                    
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>Phone:</strong><br>
+                                9666169359<br>
+                                8889996880
+                            </div>
+                        </div>
+                    
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <strong>Email:</strong><br>
+                                SSVagencies13122017@gmail.com
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
+                    
+                    
+                    <div>
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/ssvagencies?utm_source=qr&igsh=eWV2Z2JrcXJvazRk" target="_blank"    class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#hours">Store Hours</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Product Categories</h3>
+                    <ul>
+                        <li><a href="#products">Paints</a></li>
+                        <li><a href="#products">Electrical Appliances</a></li>
+                        <li><a href="#products">Geysers</a></li>
+                        <li><a href="#products">Coolers</a></li>
+                        <li><a href="#products">Pipes</a></li>
+                        <li><a href="#products">Inverters</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Customer Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Warranty Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest products, deals, and tech news.</p>
+                    <form style="margin-top: 15px;">
+                        <input type="email" placeholder="Your email address" class="form-control" style="margin-bottom: 10px;">
+                        <button type="submit" class="submit-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SSV AGENCIES. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
